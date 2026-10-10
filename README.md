@@ -1,77 +1,37 @@
-# نظام تصنيف الأشعة المقطعية للكلى (Hierarchical Kidney CT Classification System)
+# Kidney CT Scan Classification System
 
-## 📌 نظرة عامة على المشروع
-هذا المشروع عبارة عن نظام ذكاء اصطناعي يعتمد على التصنيف الهرمي (Hierarchical Classification) لتشخيص أمراض الكلى من صور الأشعة المقطعية (CT Scans). يستخدم النظام مسارًا من مرحلتين يعتمد على التعلم العميق ونقل التعلم (Transfer Learning) باستخدام نموذج VGG16:
-1. **المرحلة الأولى (البوابة الثنائية - Binary Gatekeeper):** تُصنف الكلى إما كـ `Normal` (سليمة) أو `Diseased` (مصابة) (بدقة: 87.74%).
-2. **المرحلة الثانية (مصنف متعدد الفئات - Multi-class Classifier):** إذا كانت الكلى مصابة، يقوم هذا المصنف بتحديد نوع الإصابة بدقة إلى ثلاث فئات: `Cyst` (كيس)، `Stone` (حصوة)، أو `Tumor` (ورم) (بدقة: 76.0%).
+## Overview
+نظام برمجي يعتمد على التعلم العميق (Deep Learning) لتحليل وتصنيف صور الأشعة المقطعية للكلى. تم بناء النظام كجزء من مشروع تخرج لتوفير أداة تشخيص مساعدة، تعتمد على بنية تصنيف هرمية (Hierarchical Classification).
 
-يتميز المشروع ببنية معيارية (Modular Architecture)، واستخدام DVC لتتبع مسارات العمل (Pipelines)، وتطبيق سطح مكتب احترافي مبني باستخدام PyQt5 للتشخيص الطبي في الوقت الفعلي.
+## System Architecture
+* **AI Pipeline:** يعتمد على بنية VGG16 (Transfer Learning) مقسمة إلى مسارين:
+  1. تصنيف ثنائي (Binary Classifier): فحص الحالة الأساسية (Normal vs. Diseased).
+  2. تصنيف متعدد (Multi-class Classifier): تحديد نوع الإصابة (Tumor, Cyst, Stone).
+* **GUI Desktop Application:** واجهة مستخدم رسومية مبرمجة باستخدام إطار عمل PyQt5.
+* **Hardware Integration:** مزامنة مع أجهزة الإدخال الخارجي عبر مكتبة OpenCV للاتصال المباشر بكاميرات الفحص أو الأجهزة المتصلة بـ USB.
+* **Deployment:** النظام يعمل محلياً بالكامل، ومُجمّع كملف تنفيذي مستقل (.exe) لبيئة ويندوز باستخدام PyInstaller.
 
----
+## Technologies Used
+* Python 3.9+
+* TensorFlow / Keras
+* PyQt5
+* OpenCV
+* DVC (Data Version Control)
 
-## 🛠️ التقنيات والمتطلبات
-- **اللغة:** Python 3.9+
-- **إطار العمل:** TensorFlow / Keras (VGG16 Transfer Learning)
-- **واجهة المستخدم والتطبيق:** PyQt5, PyInstaller (للتصدير)
-- **هندسة البيانات:** تصميم معياري، DVC، إدارة الإعدادات (YAML)
-- **العتاد:** مُحسّن للعمل على معالجات الرسوميات (GPU) (تم اختباره على NVIDIA RTX A2000) ويدعم التشغيل الكامل على المعالج المركزي (CPU).
+## Installation & Setup
+1. استنساخ المستودع:
+   ```bash
+   git clone [https://github.com/mohammadsalehmoryt-png/Kidney-CT-Classification.git](https://github.com/mohammadsalehmoryt-png/Kidney-CT-Classification.git)
+تثبيت الاعتمادات والمكتبات بالإصدارات المحددة:
 
-### الحزم المطلوبة (Required Packages)
-لتثبيت الاعتماديات المطلوبة، قم بتشغيل الأمر التالي:
-```bash
-pip install -r requirements.txt
-```
-*(ملاحظة: إذا كنت تقوم بإعداد البيئة على نظام Windows لتصدير التطبيق بصيغة `.exe`، فقد تحتاج إلى تجاهل/إزالة بعض حزم CUDA الخاصة بنظام Linux الموجودة داخل ملف `requirements.txt`).*
 
----
+python -m pip install -r requirements.txt
+Execution
+لتشغيل الكود المصدري للواجهة:
 
-## 📂 هيكل المشروع (البنية المعيارية)
-تم بناء المشروع باستخدام نمط معياري وقابل للتطوير بشكل صارم:
-- `config/config.yaml`: مسارات الإعدادات العامة للمشروع.
-- `params.yaml`: المتغيرات والمعلمات الثابتة للنماذج (Batch size, Epochs, Learning Rate، إلخ).
-- `src/kidneyClassifier/`: الكود المصدري الأساسي ويحتوي على الكيانات (Entities)، الإعدادات (Configurations)، المكونات (Components)، ومنسقي مسارات العمل (Pipeline Orchestrators).
-- `artifacts/`: المخرجات الناتجة وتشمل البيانات المعالجة، النماذج المدربة (بصيغة `.h5`)، ومصفوفات التقييم.
-- `app.py`: نقطة الدخول لتطبيق سطح المكتب الاحترافي (PyQt5).
 
----
+python app.py
+لعملية البناء والتصدير (Build) لملف ويندوز التنفيذي:
 
-## 🚀 كيفية تشغيل المشروع
 
-### 1. تدريب النماذج (اختياري)
-إذا كنت ترغب في إعادة تدريب النماذج من الصفر، يجب عليك تنفيذ مسارات العمل بالترتيب. تأكد من تعيين متغير البيئة إلى مسار المصدر:
-
-```bash
-# تنفيذ المرحلة الأولى (تدريب النموذج الثنائي)
-PYTHONPATH=src python src/kidneyClassifier/pipeline/stage_04_model_trainer.py
-
-# تنفيذ المرحلة الثانية (تدريب النموذج متعدد الفئات)
-PYTHONPATH=src python src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py
-```
-
-### 2. تشغيل واجهة سطح المكتب (التشخيص - Inference)
-لتشغيل الواجهة الطبية المبنية بـ PyQt5:
-```bash
-PYTHONPATH=src python app.py
-```
-
----
-
-## 🏗️ تصدير المشروع كتطبيق ويندوز مستقل (.exe)
-لتحزيم نظام الذكاء الاصطناعي هذا في تطبيق تنفيذي واحد للمستخدمين النهائيين (الأطباء/العيادات) دون الحاجة لبيئة بايثون:
-1. تأكد من أنك تعمل على **بيئة Windows**.
-2. قم بتثبيت أداة PyInstaller: `pip install pyinstaller`
-3. قم بتشغيل أمر البناء التالي في موجه الأوامر (CMD):
-```cmd
-pyinstaller --noconsole --name "KidneyCT_Pro" --add-data "src;src" --add-data "artifacts/training_binary;artifacts/training_binary" --add-data "artifacts/training_multi;artifacts/training_multi" app.py
-```
-سيتم إنشاء التطبيق النهائي داخل مجلد `dist/KidneyCT_Pro`.
-
----
-
-## 👨‍💻 ملاحظات للمطورين
-- **مشكلة استهلاك الذاكرة (Memory Growth):** يتضمن سكربت التنبؤ (`src/kidneyClassifier/pipeline/prediction.py`) إصلاحًا مخصصًا باستخدام `tf.config.experimental.set_memory_growth`. يمنع هذا TensorFlow من حجز كامل ذاكرة VRAM عند تحميل نموذجي VGG16 في نفس الوقت، والذي كان يسبب خطأ `CUDA_ERROR_NOT_READY`.
-- **تحميل النماذج:** في واجهة المستخدم (`app.py`)، يتم تحميل النماذج عن قصد في مسار خلفي (daemon thread) عند بدء التشغيل لمنع تجمد الواجهة.
-- **دعم اللغة العربية في الواجهة:** يستخدم التطبيق `arabic_reshaper` و `python-bidi` داخليًا (أو يتم التعامل معها مباشرة بواسطة دعم الاتجاه من اليمين لليسار في PyQt5) لضمان عرض المصطلحات الطبية بشكل صحيح على الأنظمة العربية.
-
-## 📄 الترخيص
-[أدخل الترخيص هنا - مثال: ترخيص MIT]
+python -m PyInstaller --noconsole --name "KidneyCT_Pro"
