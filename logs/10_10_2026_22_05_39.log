@@ -1,0 +1,7 @@
+[ 2026-10-10 22:05:43,846 ] 27 kidneyClassifier - INFO - >>>>>> مرحلة [Multi-class Model Training Stage] بدأت <<<<<<
+[ 2026-10-10 22:05:43,848 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 22:05:43,848 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 22:05:43,849 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 22:05:43,849 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_multi
+[ 2026-10-10 22:05:45,567 ] 22 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py] - السطر [19] - نص الخطأ: ['TrainingMultiConfig' object has no attribute 'training_data']
+[ 2026-10-10 22:05:45,567 ] 32 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py] - السطر [29] - نص الخطأ: ['TrainingMultiConfig' object has no attribute 'training_data']

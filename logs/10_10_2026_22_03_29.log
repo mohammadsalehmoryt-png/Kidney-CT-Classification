@@ -1,0 +1,7 @@
+[ 2026-10-10 22:03:34,364 ] 27 kidneyClassifier - INFO - >>>>>> مرحلة [Multi-class Model Training Stage] بدأت <<<<<<
+[ 2026-10-10 22:03:34,365 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 22:03:34,366 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 22:03:34,366 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 22:03:34,366 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_multi
+[ 2026-10-10 22:03:34,367 ] 22 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py] - السطر [18] - نص الخطأ: ['TrainingMultiConfig' object has no attribute 'params_include_top']
+[ 2026-10-10 22:03:34,367 ] 32 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py] - السطر [29] - نص الخطأ: ['TrainingMultiConfig' object has no attribute 'params_include_top']

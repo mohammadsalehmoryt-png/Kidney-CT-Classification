@@ -1,0 +1,17 @@
+[ 2026-10-09 21:40:34,402 ] 34 kidneyClassifier - INFO - >>>>>> مرحلة [Data Ingestion Stage (Manual Setup Verification)] بدأت <<<<<<
+[ 2026-10-09 21:40:34,402 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-09 21:40:34,404 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-09 21:40:34,404 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-09 21:40:34,405 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/data_ingestion
+[ 2026-10-09 21:40:34,405 ] 15 kidneyClassifier - INFO - بدء التحقق من وجود البيانات المُجهزة يدوياً...
+[ 2026-10-09 21:40:34,405 ] 20 kidneyClassifier - INFO - مجلد binary_dataset موجود. الفئات: ['Normal', 'Diseased']
+[ 2026-10-09 21:40:34,406 ] 25 kidneyClassifier - INFO -  - فئة [Normal] تحتوي على: 5077 صورة.
+[ 2026-10-09 21:40:34,408 ] 25 kidneyClassifier - INFO -  - فئة [Diseased] تحتوي على: 7369 صورة.
+[ 2026-10-09 21:40:34,408 ] 33 kidneyClassifier - INFO - مجلد disease_dataset موجود. الفئات: ['Tumor', 'Stone', 'Cyst']
+[ 2026-10-09 21:40:34,409 ] 38 kidneyClassifier - INFO -  - فئة [Tumor] تحتوي على: 2283 صورة.
+[ 2026-10-09 21:40:34,409 ] 38 kidneyClassifier - INFO -  - فئة [Stone] تحتوي على: 1377 صورة.
+[ 2026-10-09 21:40:34,410 ] 38 kidneyClassifier - INFO -  - فئة [Cyst] تحتوي على: 3709 صورة.
+[ 2026-10-09 21:40:34,410 ] 43 kidneyClassifier - INFO - تم التحقق من البيانات بنجاح، وهي جاهزة للمرحلة القادمة.
+[ 2026-10-09 21:40:34,410 ] 37 kidneyClassifier - INFO - >>>>>> مرحلة [Data Ingestion Stage (Manual Setup Verification)] اكتملت بنجاح <<<<<<
+
+======================

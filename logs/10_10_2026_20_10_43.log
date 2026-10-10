@@ -1,0 +1,7 @@
+[ 2026-10-10 20:10:46,990 ] 29 kidneyClassifier - INFO - >>>>>> مرحلة [Binary Model Training Stage] بدأت <<<<<<
+[ 2026-10-10 20:10:46,991 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 20:10:46,992 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 20:10:46,992 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 20:10:46,993 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_binary
+[ 2026-10-10 20:10:49,002 ] 255 absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[ 2026-10-10 20:10:49,381 ] 71 kidneyClassifier - INFO - بدء تدريب النموذج الثنائي (Binary Model) بعدد epochs = 10...

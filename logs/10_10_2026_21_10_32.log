@@ -1,0 +1,18 @@
+[ 2026-10-10 21:10:34,990 ] 29 kidneyClassifier - INFO - >>>>>> مرحلة [Binary Model Training Stage] بدأت <<<<<<
+[ 2026-10-10 21:10:34,991 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 21:10:34,992 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 21:10:34,992 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 21:10:34,992 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_binary
+[ 2026-10-10 21:10:36,070 ] 255 absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[ 2026-10-10 21:10:36,268 ] 78 kidneyClassifier - INFO - أوزان الفئات المحسوبة لمعالجة عدم التوازن: {0: np.float64(0.8444708276797829), 1: np.float64(1.22575086164451)}
+[ 2026-10-10 21:10:36,268 ] 80 kidneyClassifier - INFO - بدء تدريب النموذج الثنائي (Binary Model) بعدد epochs = 15...
+[ 2026-10-10 21:13:09,094 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:23:19,439 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:24:58,696 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:30:00,831 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:31:41,301 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:35:06,267 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:36:51,034 ] 99 kidneyClassifier - INFO - تم الانتهاء من التدريب وحفظ أفضل نموذج في: artifacts/training_binary/binary_model.h5
+[ 2026-10-10 21:36:51,034 ] 32 kidneyClassifier - INFO - >>>>>> مرحلة [Binary Model Training Stage] اكتملت بنجاح <<<<<<
+
+======================

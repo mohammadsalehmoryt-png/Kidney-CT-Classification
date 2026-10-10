@@ -1,0 +1,7 @@
+[ 2026-10-09 21:55:33,221 ] 29 kidneyClassifier - INFO - >>>>>> مرحلة [Binary Model Training Stage] بدأت <<<<<<
+[ 2026-10-09 21:55:33,221 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-09 21:55:33,222 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-09 21:55:33,222 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-09 21:55:33,223 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_binary
+[ 2026-10-09 21:55:33,224 ] 24 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_03_model_trainer_binary.py] - السطر [19] - نص الخطأ: [[Errno 2] Unable to synchronously open file (unable to open file: name = 'artifacts/prepare_base_model/base_model_updated.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)]
+[ 2026-10-09 21:55:33,224 ] 34 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_03_model_trainer_binary.py] - السطر [31] - نص الخطأ: [[Errno 2] Unable to synchronously open file (unable to open file: name = 'artifacts/prepare_base_model/base_model_updated.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)]

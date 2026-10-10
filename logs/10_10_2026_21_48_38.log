@@ -1,0 +1,9 @@
+[ 2026-10-10 21:48:42,746 ] 27 kidneyClassifier - INFO - >>>>>> مرحلة [Multi-class Model Training Stage] بدأت <<<<<<
+[ 2026-10-10 21:48:42,748 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 21:48:42,748 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 21:48:42,748 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 21:48:42,749 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_multi
+[ 2026-10-10 21:48:42,749 ] 14 kidneyClassifier - INFO - تحميل النموذج الأساسي وتعديل طبقة الخروج لتصنيف 3 فئات...
+[ 2026-10-10 21:48:44,552 ] 41 kidneyClassifier - INFO - تم تجميع نموذج الفئات المتعددة بنجاح مع محسن Adam وتفعيل Softmax.
+[ 2026-10-10 21:48:44,552 ] 22 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py] - السطر [19] - نص الخطأ: [[Errno 2] No such file or directory: 'artifacts/data_ingestion/diseased_dataset']
+[ 2026-10-10 21:48:44,552 ] 32 kidneyClassifier - ERROR - حدث خطأ في السكريبت [/home/am/Kidney_CT_Project2/src/kidneyClassifier/pipeline/stage_05_model_trainer_multi.py] - السطر [29] - نص الخطأ: [[Errno 2] No such file or directory: 'artifacts/data_ingestion/diseased_dataset']

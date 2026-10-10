@@ -1,0 +1,12 @@
+[ 2026-10-10 21:50:46,757 ] 27 kidneyClassifier - INFO - >>>>>> مرحلة [Multi-class Model Training Stage] بدأت <<<<<<
+[ 2026-10-10 21:50:46,758 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 21:50:46,759 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 21:50:46,759 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 21:50:46,759 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/training_multi
+[ 2026-10-10 21:50:46,759 ] 14 kidneyClassifier - INFO - تحميل النموذج الأساسي وتعديل طبقة الخروج لتصنيف 3 فئات...
+[ 2026-10-10 21:50:47,929 ] 41 kidneyClassifier - INFO - تم تجميع نموذج الفئات المتعددة بنجاح مع محسن Adam وتفعيل Softmax.
+[ 2026-10-10 21:50:48,152 ] 96 kidneyClassifier - INFO - أوزان الفئات المتعددة المحسوبة: {0: np.float64(0.6622866127583109), 1: np.float64(1.7837265577737447), 2: np.float64(1.0758985586571794)}
+[ 2026-10-10 21:50:48,152 ] 98 kidneyClassifier - INFO - بدء تدريب نموذج الأمراض المتعددة (Multi-class) بـ 15 دورات...
+[ 2026-10-10 21:52:32,912 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:53:34,274 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 21:56:36,502 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 

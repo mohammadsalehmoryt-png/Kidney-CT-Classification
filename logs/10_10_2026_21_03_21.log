@@ -1,0 +1,12 @@
+[ 2026-10-10 21:03:30,773 ] 26 kidneyClassifier - INFO - >>>>>> مرحلة [Binary Model Evaluation Stage] بدأت <<<<<<
+[ 2026-10-10 21:03:30,776 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 21:03:30,777 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 21:03:30,777 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 21:03:30,779 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/evaluation
+[ 2026-10-10 21:03:34,168 ] 255 absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[ 2026-10-10 21:04:18,598 ] 40 kidneyClassifier - INFO - تم حفظ ملف json في: artifacts/evaluation/scores.json
+[ 2026-10-10 21:04:18,599 ] 45 kidneyClassifier - INFO - تم حفظ مقاييس التقييم في: artifacts/evaluation/scores.json
+[ 2026-10-10 21:04:18,599 ] 46 kidneyClassifier - INFO - النتيجة النهائية للنموذج الأول - Loss: 8.0279, Accuracy: 62.70%
+[ 2026-10-10 21:04:18,599 ] 29 kidneyClassifier - INFO - >>>>>> مرحلة [Binary Model Evaluation Stage] اكتملت بنجاح <<<<<<
+
+======================

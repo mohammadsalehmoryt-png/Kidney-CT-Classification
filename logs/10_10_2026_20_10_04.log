@@ -1,0 +1,10 @@
+[ 2026-10-10 20:10:12,860 ] 25 kidneyClassifier - INFO - >>>>>> مرحلة [Prepare base model stage] بدأت <<<<<<
+[ 2026-10-10 20:10:12,863 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: config/config.yaml
+[ 2026-10-10 20:10:12,865 ] 18 kidneyClassifier - INFO - تم تحميل ملف yaml بنجاح من: params.yaml
+[ 2026-10-10 20:10:12,865 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts
+[ 2026-10-10 20:10:12,866 ] 32 kidneyClassifier - INFO - تم إنشاء المجلد في: artifacts/prepare_base_model
+[ 2026-10-10 20:10:15,613 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 20:10:15,805 ] 84 absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+[ 2026-10-10 20:10:15,948 ] 28 kidneyClassifier - INFO - >>>>>> مرحلة [Prepare base model stage] اكتملت بنجاح <<<<<<
+
+======================

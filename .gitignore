@@ -1,0 +1,19 @@
+# Environments
+venv/
+win_env/
+.env
+
+# PyInstaller & Build files
+build/
+dist/
+*.exe
+*.spec
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Data & Models (To prevent GitHub 100MB limit error)
+artifacts/
+*.h5
+captured_scan.jpg
