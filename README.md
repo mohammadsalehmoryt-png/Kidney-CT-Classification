@@ -1,7 +1,7 @@
 # Kidney CT Scan Classification System
 
 ## Overview
-نظام برمجي يعتمد على التعلم العميق (Deep Learning) لتحليل وتصنيف صور الأشعة المقطعية للكلى. تم بناء النظام كجزء من مشروع تخرج لتوفير أداة تشخيص مساعدة، تعتمد على بنية تصنيف هرمية (Hierarchical Classification).
+نظام برمجي يعتمد على التعلم العميق (Deep Learning) لتحليل وتصنيف صور الأشعة المقطعية للكلى. تم بناء النظام لتوفير أداة تشخيص مساعدة، تعتمد على بنية تصنيف هرمية (Hierarchical Classification).
 
 ## System Architecture
 * **AI Pipeline:** يعتمد على بنية VGG16 (Transfer Learning) مقسمة إلى مسارين:
@@ -22,15 +22,30 @@
 1. استنساخ المستودع:
    ```bash
    git clone [https://github.com/mohammadsalehmoryt-png/Kidney-CT-Classification.git](https://github.com/mohammadsalehmoryt-png/Kidney-CT-Classification.git)
+
+
+
+
 تثبيت الاعتمادات والمكتبات بالإصدارات المحددة:
 
 
 python -m pip install -r requirements.txt
 Execution
+
+
+
+
+
+
 لتشغيل الكود المصدري للواجهة:
 
 
 python app.py
+
+
+
+
+
 لعملية البناء والتصدير (Build) لملف ويندوز التنفيذي:
 
 
